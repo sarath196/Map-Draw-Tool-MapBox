@@ -1,0 +1,253 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.form-control {
+    font-size: 12px;
+}
+
+.fill-navy-dark {
+    background: #222B30;
+}
+
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 275px;
+    left: 0px;
+    cursor: cell;
+}
+
+#sidebar {
+    width: 275px;
+    border-left: 1px solid #aaa;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+}
+
+path {
+    stroke-dashoffset: 10000;
+    stroke-dasharray: 10000;
+    -webkit-transition: stroke-dashoffset 6s ease-in
+}
+
+svg path.leaflet-clickable {
+    stroke-width: 3px;
+    stroke-opacity: 0.7;
+}
+
+.leaflet-popup-content-wrapper {
+    background: #fff;
+    color: #666;
+    opacity: 0.9;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .25);
+}
+
+.leaflet-popup-content {
+    padding: 0px 5px;
+    font-weight: bold
+}
+
+.leaflet-popup-tip {
+    border-top: 5px solid #fff;
+    opacity: 1;
+}
+
+.leaflet-fade-anim .leaflet-popup,
+.leaflet-fade-anim .leaflet-tile {
+    -webkit-transition: none;
+}
+
+@media (max-width: 600px) {
+    #sidebar {
+        display: none;
+    }
+    #map {
+        width: 100%
+    }
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+.form-control:focus {
+    border-color: #cccccc;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.latlong-bar {
+    position: absolute;
+    z-index: 500;
+    background-color: #40515194;
+    padding: 2px;
+}
+
+#latlong-input {
+    font-size: 13px;
+    width: 300px;
+    padding: 3px;
+}
+
+#sidebar {
+    padding: 10px;
+}
+
+.geo-input {
+    border-radius: 0;
+}
+
+.geo-drop {
+    position: absolute;
+    background-color: #899393d4;
+    padding: 3px;
+    left: 0;
+    width: 403px;
+}
+
+.geo-drop-input {
+    width: 396px;
+}
+
+#geocode-search {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 14px;
+    padding: 4px 4px 4px 8px;
+    border: none;
+}
+
+#geocode-search:focus {
+    outline-style: none;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 253px;
+    max-width: 253px;
+    overflow: auto;
+    z-index: 100;
+    text-align: left;
+    font-size: 13px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 5px 5px 4px 7px;
+    text-decoration: none;
+    display: block;
+    box-shadow: 0px 3px 0px -2px rgba(206, 205, 205, 0.75);
+}
+
+.dropdown a:hover {
+    background-color: #ddd;
+}
+
+.geo-draw-tab {
+    position: absolute;
+    background-color: #f0f0f0;
+    padding: 3px;
+    left: 0;
+    width: 253px;
+    min-height: 120px;
+    margin: 10px;
+}
+
+.close-btn {
+    background-color: white;
+    border: none;
+    outline-style: none;
+    box-shadow: none;
+}
+
+.btn-select {
+    background-color: #00000082;
+}
+
+.nav-tabs .nav-link {
+    background-color: #4f5a5a6e;
+    border-radius: unset;
+    margin: 0px 2px 0px 0px;
+}
+
+a {
+    color: #3e444a;
+}
+
+.pin-control {
+    padding: 10px;
+}
+
+.draw-tool-icon {
+    padding: 5px 2px 8px 2px;
+}
+
+.tool-active {
+    background-color: #a2afaac2;
+}
+
+.pin-control-panel {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+}
+
+.panel-color-picker {
+    position: absolute;
+    right: 10px;
+    width: 15px;
+    height: 0px;
+    background-color: aliceblue;
+}
+
+.dropdown-2 {
+    top: 149px;
+    position: relative;
+}
+
+.geo-find-place-tab {
+    position: absolute;
+    background-color: #f0f0f0;
+    padding: 3px;
+    left: 0;
+    width: 253px;
+    min-height: 120px;
+}
+
+.find-place-result {
+	padding: 0px 0px 5px 0px;
+    display: block;
+}
+
+.dropdown-menu {
+    font-size: 13px;
+    min-width: 0px !important;
+}
+
+.dropdown-toggle {
+    max-width: 96px;
+    min-width: 96px;
+    font-size: 12px;
+    height: 38px;
+}
+
+.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:active,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:focus,
+.bootstrap-select>.dropdown-toggle.bs-placeholder:hover {
+    color: #191717 !important;
+}
